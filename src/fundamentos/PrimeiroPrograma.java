@@ -5,7 +5,7 @@ public class PrimeiroPrograma {
 	public static void main(String[] args) {
 		
 		double raio = 3.4;
-		double PI = 3.14159;
+		final double PI = 3.14159; //usa-se final para impedir de que a variavel mude de valor
 		
 		double area = PI * raio * raio ;
 		System.out.println(area);

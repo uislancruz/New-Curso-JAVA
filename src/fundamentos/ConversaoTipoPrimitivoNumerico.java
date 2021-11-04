@@ -8,7 +8,7 @@ public class ConversaoTipoPrimitivoNumerico {
 		float b = (float)1.0; //explicita
 		System.out.println(b);
 		
-		bigdecimal b = 1;
+		
 	}
 
 }

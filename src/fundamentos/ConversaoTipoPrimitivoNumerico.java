@@ -2,11 +2,13 @@ package fundamentos;
 
 public class ConversaoTipoPrimitivoNumerico {
 	public static void main(String[] args) {
-		double a = 1;
+		double a = 1; //implicita
 		System.out.println(a);
 		
-		float b = 1.0f;
+		float b = (float)1.0; //explicita
 		System.out.println(b);
+		
+		bigdecimal b = 1;
 	}
 
 }

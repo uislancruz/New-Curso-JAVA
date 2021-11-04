@@ -3,7 +3,13 @@ package fundamentos;
 public class Console {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		System.out.print("Bom");
+		System.out.print(" Dia!\n\n");
+		
+		System.out.println("Bom");
+		System.out.println("Dia");
+		
 
 	}
 

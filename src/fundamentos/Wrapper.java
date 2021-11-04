@@ -8,8 +8,7 @@ public class Wrapper {
 		short s = 1000;
 		
 		Boolean bo = true;
-		System.out.println(bo.parseBoolean("t"));
-
+		System.out.println(bo);
 	}
 
 }

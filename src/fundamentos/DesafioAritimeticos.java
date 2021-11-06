@@ -31,8 +31,6 @@ public class DesafioAritimeticos {
 		
 		
 		
-		System.out.println(grandedivisor2);
-		System.out.println(grandedivisor);
 		System.out.println(resposta);
 		
 		

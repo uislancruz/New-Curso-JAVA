@@ -1,5 +1,8 @@
 package fundamentos;
 
 public class Logicos {
+	public static void main(String[] args) {
+		
+	}
 
 }

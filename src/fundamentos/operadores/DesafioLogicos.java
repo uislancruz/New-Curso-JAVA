@@ -7,11 +7,7 @@ public class DesafioLogicos {
 		//trabalho na terça(V ou F)
 		//trabalho na quinda(V ou F)
 		
-		boolean trabalho1 = true;
-		boolean trabalho2 = true;
-
-		//System.out.println("Digite 1 para sim \nDigite 2 para não");
-		
+			
 		Scanner teclado = new Scanner(System.in);
 			
 		
@@ -25,6 +21,8 @@ public class DesafioLogicos {
 				System.out.println("Iremos ao shopping comprar a TV de 50 polegadas e tomar sorvete");
 			}else if(valor1 == 0) {
 				System.out.println("Infelizmente ficaremos em casa :'( ");
+			}else {
+				System.out.println("NUMERO INVALIDO");
 			}
 	}
 		

@@ -35,6 +35,8 @@ public class DesafioDiSemana {
 		}else if(dia.equalsIgnoreCase("Sabado")) {
 			
 			System.out.println(7);
+		}else {
+			System.out.println("Dia Invalido. A semana possui apenas 7 dias");
 		}
 		
 		

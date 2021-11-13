@@ -20,7 +20,7 @@ public class DesafioDiSemana {
 			
 			System.out.println(2);
 			
-		}else if(dia.equalsIgnoreCase("Terça")) {
+		}else if(dia.equalsIgnoreCase("Terça") || dia.equalsIgnoreCase("terca")) {
 			
 			System.out.println(3);
 		}else if(dia.equalsIgnoreCase("Quarta")) {
@@ -32,7 +32,7 @@ public class DesafioDiSemana {
 		}else if(dia.equalsIgnoreCase("Sexta")) {
 			
 			System.out.println(6);
-		}else if(dia.equalsIgnoreCase("Sabado")) {
+		}else if(dia.equalsIgnoreCase("Sabado") || dia.equalsIgnoreCase("sábado")) {
 			
 			System.out.println(7);
 		}else {

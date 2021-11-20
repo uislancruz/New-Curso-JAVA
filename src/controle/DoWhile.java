@@ -13,9 +13,14 @@ public class DoWhile {
 		
 		Scanner entrada = new Scanner(System.in);
 		
+		String texto = "";
+		
 		do {
+			System.out.println("Você precisa falar as palavras magicas");
+			System.out.println("Quer sair? ");
+			texto = entrada.nextLine();
 			
-		}while(false);
+		}while(!texto.equalsIgnoreCase("por favor"));
 		
 		entrada.close();
 	}

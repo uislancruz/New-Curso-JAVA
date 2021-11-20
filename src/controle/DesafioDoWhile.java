@@ -20,6 +20,7 @@ public class DesafioDoWhile {
 			 
 			total += nota;
 			quantidadeDeNotas++;
+		 
 		 }else if(nota != -1){
 			 System.out.println("Nota Inválida!!! ;D ");			 
 			 

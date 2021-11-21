@@ -10,6 +10,7 @@ public class Break {
 			}
 			System.err.println(i);
 		}
+		System.out.println("Fim!");
 		
 	}
 

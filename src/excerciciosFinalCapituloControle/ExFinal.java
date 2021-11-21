@@ -1,4 +1,4 @@
-package controle;
+package excerciciosFinalCapituloControle;
 
 import java.util.Scanner;
 

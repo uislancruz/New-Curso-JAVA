@@ -26,10 +26,3 @@ public class ExFinal {
 
 
 
-/*if (valor >= 0 && valor <= 10) {
-	if(valor%2 == 1) {
-		System.out.println("O valor é: " + valor + "É um numero par");
-	}else {
-		System.out.println("Valor digitado incorreto: ");
-	}
-}*/

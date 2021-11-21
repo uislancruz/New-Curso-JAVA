@@ -9,7 +9,12 @@ public class Continue {
 			}
 			System.out.println(i);
 		}
-			
+		for (int j = 0; j <=10; j++) {
+			if(j == 5) continue;
+			System.out.println(j);
+		}
+		
+					
 	}
 
 }

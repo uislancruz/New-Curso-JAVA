@@ -11,6 +11,7 @@ public class DesafioDataTeste {
 		
 		System.out.println("O Uislan nasceu no dia: "+ d1.dia + "\nDo mês: " +d1.mes+"\nDo ano: "+d1.ano);
 		System.out.printf("%d/%s/%d", d1.dia, d1.mes, d1.ano);
+		
 	}
 
 }

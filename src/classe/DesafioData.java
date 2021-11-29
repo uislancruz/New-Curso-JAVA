@@ -6,5 +6,8 @@ public class DesafioData {
 	String mes;
 	int ano;
 	
-
+	String obterDataFormatada() {
+		return String.format("%d/%s/%d", dia, mes, ano);
+	
+}
 }

@@ -9,8 +9,14 @@ public class DesafioDataTeste {
 		d1.mes = "Abril";
 		d1.ano =1988;
 		
-		System.out.println("O Uislan nasceu no dia: "+ d1.dia + "\nDo mês: " +d1.mes+"\nDo ano: "+d1.ano);
-		System.out.printf("%d/%s/%d", d1.dia, d1.mes, d1.ano);
+		var d2 = new DesafioData();
+		
+		d2.dia = 31;
+		d2.mes = "Dezembro";
+		d2.ano = 2021;
+		
+		System.out.println(d1.obterDataFormatada());
+		System.out.printf(d2.obterDataFormatada());
 		
 	}
 

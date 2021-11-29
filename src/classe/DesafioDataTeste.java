@@ -15,8 +15,11 @@ public class DesafioDataTeste {
 		d2.mes = "Dezembro";
 		d2.ano = 2021;
 		
-		System.out.println(d1.obterDataFormatada());
-		System.out.printf(d2.obterDataFormatada());
+		d1.imprimirDataFormatada();
+		d2.imprimirDataFormatada();
+		
+		//System.out.println(d1.obterDataFormatada());
+		//System.out.println(d2.obterDataFormatada());
 		
 	}
 

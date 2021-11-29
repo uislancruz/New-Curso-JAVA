@@ -9,5 +9,11 @@ public class DesafioData {
 	String obterDataFormatada() {
 		return String.format("%d/%s/%d", dia, mes, ano);
 	
-}
+	}
+	
+	void imprimirDataFormatada() {
+		System.out.println(obterDataFormatada());
+	}
+	
+	
 }

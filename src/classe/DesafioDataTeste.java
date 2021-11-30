@@ -5,15 +5,9 @@ public class DesafioDataTeste {
 		
 		DesafioData d1 = new DesafioData();
 		
-		d1.dia = 12;
-		d1.mes = "Abril";
-		d1.ano =1988;
 		
-		var d2 = new DesafioData();
+		var d2 = new DesafioData(31,"Dezembro",1970);
 		
-		d2.dia = 31;
-		d2.mes = "Dezembro";
-		d2.ano = 2021;
 		
 		d1.imprimirDataFormatada();
 		d2.imprimirDataFormatada();

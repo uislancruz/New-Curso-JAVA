@@ -8,7 +8,9 @@ public class DesafioData {
 	
 	
 	DesafioData(){
-		
+		dia = 1;
+		mes = "Janeiro";
+		ano = 1970;
 	}
 	
 	DesafioData(int diaInicial, String mesInicial, int anoInicial){

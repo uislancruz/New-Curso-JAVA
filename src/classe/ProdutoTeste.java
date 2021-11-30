@@ -11,8 +11,8 @@ public class ProdutoTeste {
 		p1.desconto = 0.25;
 				
 		
-		var p2 = new Produto("Caneta Preta");
-		//p2.nome = "Caneta Preta";
+		var p2 = new Produto();
+		p2.nome = "Caneta Preta";
 		p2.preco = 12.56;
 		p2.desconto = 0.29;
 		

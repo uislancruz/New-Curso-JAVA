@@ -10,6 +10,10 @@ public class Produto {
 		nome = nomeInicial;
 	}
 	
+	Produto(){
+		
+	}
+	
 	double precoComDesconto() {
 		return preco * (1 - desconto);
 		

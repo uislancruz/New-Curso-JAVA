@@ -10,12 +10,13 @@ public class AreaCircTeste {
 		AreaCirc a2 = new AreaCirc(5);
 		//a2.pi = 5;
 		
-		AreaCirc.PI = 3.14;
+		//AreaCirc.PI = 3.14;
 		
 		System.out.println(a1.area());
 		
-		AreaCirc.PI = 0.1;
+		//AreaCirc.PI = 0.1;
 		System.out.println(a2.area());
+		System.out.println(Math.PI);
 	}
 
 }

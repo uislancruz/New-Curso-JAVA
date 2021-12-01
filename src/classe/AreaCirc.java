@@ -3,7 +3,7 @@ package classe;
 public class AreaCirc {
 	
 	double raio;
-	static double pi = 3.14;
+	final static double PI = 3.14;
 	
 	AreaCirc(double raioInicial) {
 		
@@ -12,7 +12,7 @@ public class AreaCirc {
 	
 	double area () {
 		
-		return  pi * Math.pow(raio, 2);
+		return  PI * Math.pow(raio, 2);
 	}
 
 }

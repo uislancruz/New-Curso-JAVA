@@ -3,10 +3,10 @@ package classe;
 public class AreaCirc {
 	
 	double raio;
-	double pi;
+	static double pi = 3.14;
 	
 	AreaCirc(double raioInicial) {
-		pi = 3.14;
+		
 		raio = raioInicial;
 	}
 	

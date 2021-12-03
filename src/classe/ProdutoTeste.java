@@ -10,7 +10,7 @@ public class ProdutoTeste {
 		var p2 = new Produto();
 		p2.nome = "Caneta Preta";
 		p2.preco = 12.56;
-		p2.desconto = 0.29;
+		//p2.desconto = 0.29;
 		
 		System.out.println(p1.nome);
 		System.out.println(p2.nome);
@@ -18,8 +18,10 @@ public class ProdutoTeste {
 		double precoFinal1 = p1.precoComDesconto(0);
 		double precoFinal2 = p2.precoComDesconto(0.1);
 		double mediaCarrinho = ((precoFinal1 + precoFinal2)/2);
+		double descFinal = mediaCarrinho * Produto.desconto;
 		
 		System.out.printf("Média do carrinho = R$%.2f", mediaCarrinho);
+		System.out.printf("\nPreço final com desconto = R$.2f", descFinal);
 		
 		
 	}

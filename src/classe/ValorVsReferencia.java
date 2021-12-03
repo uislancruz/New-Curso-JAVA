@@ -4,7 +4,7 @@ public class ValorVsReferencia {
 	public static void main(String[] args) {
 		
 		double a = 2;
-		double b = a;
+		double b = a; //atribuição por valor
 		
 		a++;
 		b--;
@@ -19,6 +19,17 @@ public class ValorVsReferencia {
 		
 		System.out.println(d1.obterDataFormatada());
 		System.out.println(d2.obterDataFormatada());
+		
+		voltarDataParaValorPadrão(d1);
+		
+		System.out.println(d1.obterDataFormatada());
+		System.out.println(d2.obterDataFormatada());
+	}
+	
+	static void voltarDataParaValorPadrão(DesafioData d) {
+		d.dia = 1;
+		d.mes = "jan";
+		d.ano = 1970;
 		
 	}
 

@@ -27,7 +27,7 @@ public class ValorVsReferencia {
 	}
 	
 	static void voltarDataParaValorPadrão(DesafioData d) {
-		d.dia = 1;
+		d.dia = 2;
 		d.mes = "jan";
 		d.ano = 1970;
 		

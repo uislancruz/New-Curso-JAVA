@@ -4,7 +4,7 @@ public class ProdutoTeste {
 	public static void main(String[] args) {
 		
 	
-		Produto p1 = new Produto("NoteBook", 4356.89, 0.25);
+		Produto p1 = new Produto("NoteBook", 4356.89);
 		
 				
 		var p2 = new Produto();
@@ -15,9 +15,10 @@ public class ProdutoTeste {
 		System.out.println(p1.nome);
 		System.out.println(p2.nome);
 		
-		double precoFinal1 = p1.precoComDesconto(0);
-		double precoFinal2 = p2.precoComDesconto(0.1);
-		double mediaCarrinho = ((precoFinal1 + precoFinal2)/2);
+		//double precoFinal1 = p1.precoComDesconto();
+		//double precoFinal2 = p2.precoComDesconto(0.1);
+		
+		double mediaCarrinho = (p1.preco + p2.preco);
 		double descFinal =  mediaCarrinho - (mediaCarrinho * Produto.desconto);
 		
 		System.out.printf("Média do carrinho = R$%.2f", mediaCarrinho);

@@ -24,13 +24,22 @@ public class ValorVsReferencia {
 		
 		System.out.println(d1.obterDataFormatada());
 		System.out.println(d2.obterDataFormatada());
+		
+		int c = 5;
+		alterarPrimitivo(c);
+		System.out.println(c);
 	}
 	
 	static void voltarDataParaValorPadrão(DesafioData d) {
-		d.dia = 2;
+		d.dia = 1;
 		d.mes = "jan";
 		d.ano = 1970;
 		
 	}
+	
+	static void alterarPrimitivo(int a) {
+		a++;
+	}
+	
 
 }

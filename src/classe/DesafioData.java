@@ -31,7 +31,8 @@ public class DesafioData {
 	}
 	
 	String obterDataFormatada() {
-		return String.format("%d/%s/%d", dia, mes, ano);
+		final String formato = "%d/%s/%d";
+		return String.format(formato, dia, mes, ano);
 	
 	}
 	

@@ -9,7 +9,7 @@ public class DesafioData {
 	
 	DesafioData(){
 		
-		//usando o this();
+		//usando o this(); usando o this() como metodo
 		//dia = 1;
 		//mes = "Janeiro";
 		//ano = 1970;
@@ -22,7 +22,7 @@ public class DesafioData {
 		//mes = mesInicial;
 		//ano = anoInicial;
 		
-		//usando o this;
+		//usando o this; usando o this para referenciar
 		
 		this.dia = dia;
 		this.mes = mes;

@@ -6,13 +6,14 @@ public class Exercicio {
 	
 	public static void main(String[] args) {
 		
-		double [] notasAlunoA = new double[3];
+		double [] notasAlunoA = new double[4];
 		
 		System.out.println(Arrays.toString(notasAlunoA));// apenas para ver o valor do array sem atribuir valor
 		
 		notasAlunoA[0] = 7.9;
 		notasAlunoA[1] = 8;
 		notasAlunoA[2] = 6.7;
+		notasAlunoA[3] = 9.7;
 		
 		System.out.println(Arrays.toString(notasAlunoA));
 		//codigo aprova de alterações, pq voce não ta usando numero fixo e sim quantidade de

@@ -21,7 +21,7 @@ public class Exercicio {
 			total += notasAlunoA[i];
 		}
 		
-		System.out.println(total);
+		System.out.println(total/3);
 		
 	}
 

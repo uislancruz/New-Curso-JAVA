@@ -17,11 +17,11 @@ public class Exercicio {
 		System.out.println(Arrays.toString(notasAlunoA));
 		
 		double total = 0;
-		for(int i = 0; i < 3; i++) {
+		for(int i = 0; i < notasAlunoA.length; i++) {
 			total += notasAlunoA[i];
 		}
 		
-		System.out.println(total/3);
+		System.out.println(total/notasAlunoA.length);
 		
 	}
 

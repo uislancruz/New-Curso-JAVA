@@ -19,7 +19,12 @@ public class DesafioArrayNotasTeste {
 			notas[i] = entrada.nextInt();
 		}
 		
-		System.out.println(Arrays.toString(notas));
+		double total = 0;
+		for(double nota: notas) {
+			total += nota;
+		}
+		double media = total / notas.length;
+		System.out.println("A média" + media + "!");
 		
 		entrada.close();
 		

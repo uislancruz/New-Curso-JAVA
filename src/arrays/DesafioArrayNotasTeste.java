@@ -8,14 +8,14 @@ public class DesafioArrayNotasTeste {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		System.out.print("Quantas notas:");
+		System.out.print("Quantas notas: ");
 		
 		int quantidadeNotas= entrada.nextInt();
 		
 		double [] notas = new double [quantidadeNotas];
 		
 		for (int i = 0; i < notas.length; i++) {
-			System.out.println("Informe a nota" + (i + 1) + ": ");
+			System.out.println("Informe a nota: " + (i + 1) + ": ");
 			notas[i] = entrada.nextInt();
 		}
 		

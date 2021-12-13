@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DesafioArrayNotasTeste {
@@ -14,9 +15,11 @@ public class DesafioArrayNotasTeste {
 		double [] notas = new double [quantidadeNotas];
 		
 		for (int i = 0; i < notas.length; i++) {
-			System.out.println("Informe a nota" + i + 1 + ": ");
+			System.out.println("Informe a nota" + (i + 1) + ": ");
 			notas[i] = entrada.nextInt();
 		}
+		
+		System.out.println(Arrays.toString(notas));
 		
 		entrada.close();
 		

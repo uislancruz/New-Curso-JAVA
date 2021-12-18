@@ -12,6 +12,9 @@ public class EqualsHashcode {
 		variavelUsuario2.email = "pedro.silva@ezemail.com.br";
 		
 		System.out.println(variavelUsuario1 == variavelUsuario2);
+		System.out.println(variavelUsuario1.equals(variavelUsuario2));
+		System.out.println(variavelUsuario2.equals(variavelUsuario1));
+		
 		
 	}
 

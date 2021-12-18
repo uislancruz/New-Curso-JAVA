@@ -4,5 +4,16 @@ public class Usuario {
 	
 	String nome;
 	String email;
+	
+	@Override
+	public boolean equals(Object objeto) {
+		
+		Usuario outro = (Usuario) objeto;
+		
+		boolean nomeIgual = outro.nome == this.nome;
+		boolean emailIgual = outro.email == this.email;
+		
+		return nomeIgual && emailIgual;
+	}
 
 }

@@ -10,8 +10,8 @@ public class Usuario {
 		
 		Usuario outro = (Usuario) objeto;
 		
-		boolean nomeIgual = outro.nome == this.nome;
-		boolean emailIgual = outro.email == this.email;
+		boolean nomeIgual = outro.nome.equals(this.nome);
+		boolean emailIgual = outro.email.equals (this.email);
 		
 		return nomeIgual && emailIgual;
 	}

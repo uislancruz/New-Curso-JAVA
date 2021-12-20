@@ -1,6 +1,6 @@
 package classe;
 
-public class EqualsHashcode {
+public class Equals {
 	public static void main(String[] args) {
 		
 		Usuario variavelUsuario1 = new Usuario();

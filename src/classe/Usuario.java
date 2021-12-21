@@ -21,5 +21,8 @@ public class Usuario {
 	}
 
 }
-	
+	public int hashCode() {
+		//return this.nome.length();
+		return 0;
+	}
 }

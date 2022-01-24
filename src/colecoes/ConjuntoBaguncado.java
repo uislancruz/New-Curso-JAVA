@@ -22,7 +22,8 @@ public class ConjuntoBaguncado {
 		System.out.println("Tamanho é " + conjunto.size());
 		
 		System.out.println(conjunto.remove("teste"));// se foi removido ele retornará true, pois é tipo boolean, caso não, false
-		
+		System.out.println(conjunto.remove("Teste"));
+		System.out.println("Tamanho é " + conjunto.size());
 		System.out.println(conjunto.contains("teste"));// como eu removi a cima o "teste", ele retornará false, pois não tem 
 		
 	}

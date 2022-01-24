@@ -36,6 +36,9 @@ public class ConjuntoBaguncado {
 		
 		System.out.println(numeros);
 		System.out.println(conjunto);
+		
+		conjunto.addAll(numeros);
+		System.out.println(conjunto);
 	}
 
 }

@@ -17,7 +17,13 @@ public class ConjuntoBaguncado {
 		//caso eu add um novo elemeto reptido, ele não alterará a quantidade do conjunto. 
 		//Ex:
 		
+		conjunto.add("Teste"); // aqui o elemento dentro é o mesmo que a linha 11. Por isso não acrescenta.
+		conjunto.add("teste"); // aqui acrescenta pois os valores são diferente (T e t) lembrando que o JAVA é case sensitive 
+		System.out.println("Tamanho é " + conjunto.size());
 		
+		System.out.println(conjunto.remove("teste"));// se foi removido ele retornará true, pois é tipo boolean, caso não, false
+		
+		System.out.println(conjunto.contains("teste"));// como eu removi a cima o "teste", ele retornará false, pois não tem 
 		
 	}
 

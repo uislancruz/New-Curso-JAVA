@@ -1,6 +1,7 @@
 package colecoes;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class ConjuntoBaguncado {
 	public static void main(String[] args) {
@@ -26,6 +27,15 @@ public class ConjuntoBaguncado {
 		System.out.println("Tamanho é " + conjunto.size());
 		System.out.println(conjunto.contains("teste"));// como eu removi a cima o "teste", ele retornará false, pois não tem 
 		
+		
+		Set numeros = new HashSet();
+		
+		numeros.add(1);
+		numeros.add(2);
+		numeros.add(3);
+		
+		System.out.println(numeros);
+		System.out.println(conjunto);
 	}
 
 }

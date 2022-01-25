@@ -1,5 +1,7 @@
 package colecoes;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -16,6 +18,17 @@ public class ConjuntoComportado {
 		
 		for(String nomeCandidato: listaAprovados) {
 			System.out.println(nomeCandidato);
+		}
+		
+		Set<Integer> numeros = new HashSet<Integer>();
+		
+		numeros.add(1);
+		numeros.add(2);
+		numeros.add(120);
+		numeros.add(6);
+		
+		for(int n: numeros) {
+			System.out.println(n);
 		}
 	}
 

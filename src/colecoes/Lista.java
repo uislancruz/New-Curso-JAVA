@@ -18,7 +18,7 @@ public class Lista {
 		lista.add(new Usuario("Manu"));
 		
 		for (Usuario u: lista) {
-			System.out.println(u);
+			System.out.println(u.nome);
 		}
 	}
 	

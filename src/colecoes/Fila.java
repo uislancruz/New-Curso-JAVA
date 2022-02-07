@@ -29,6 +29,10 @@ public class Fila {
 		//fila.clear(); limpar
 		//fila.isEmpty(); saber se estar ou não vazia
 		
+		
+		//Poll e Remove -> Obtem o proximo elemento da fila e remove!
+		//diferença é o comportamento
+		//quando a fila está vazia
 		System.out.println(fila.poll());// retorna NULL
 		System.out.println(fila.poll());
 		System.out.println(fila.poll());

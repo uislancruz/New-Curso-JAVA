@@ -24,9 +24,13 @@ public class Mapa {
 		
 		System.out.println(usuarios.get(4));
 		
+		for(int pecorrendoChave: usuarios.keySet()) {
+			System.out.println(pecorrendoChave);
+		}
 		
-		
-		
+		for(String pecorrendoValor: usuarios.values()) {
+			System.out.println(pecorrendoValor);
+		}
 		
 	}
 

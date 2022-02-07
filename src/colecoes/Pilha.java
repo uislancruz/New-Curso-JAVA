@@ -15,6 +15,16 @@ public class Pilha {
 		System.out.println(livros.peek());
 		System.out.println(livros.element());
 		
+		System.out.println(livros.poll());
+		System.out.println(livros.poll());
+		System.out.println(livros.poll());
+		System.out.println(livros.poll());
+		System.out.println(livros.poll());
+		System.out.println(livros.pop());
+		//System.out.println(livros.remove());
+		
+		//livros.size(); Tamanho
+		
 	}
 
 }

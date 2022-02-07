@@ -15,6 +15,10 @@ public class Pilha {
 		System.out.println(livros.peek());
 		System.out.println(livros.element());
 		
+		for(String listaDeLivros: livros) {
+			System.err.println(listaDeLivros);
+		}
+		
 		System.out.println(livros.poll());
 		System.out.println(livros.poll());
 		System.out.println(livros.poll());

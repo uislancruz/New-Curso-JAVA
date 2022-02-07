@@ -16,6 +16,7 @@ public class Mapa {
 		System.out.println(usuarios.isEmpty());
 		
 		System.out.println(usuarios.keySet());
+		System.out.println(usuarios.values());
 		
 		
 		

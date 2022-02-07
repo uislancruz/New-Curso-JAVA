@@ -29,13 +29,14 @@ public class Fila {
 		//fila.clear(); limpar
 		//fila.isEmpty(); saber se estar ou não vazia
 		
+		System.out.println(fila.poll());// retorna NULL
 		System.out.println(fila.poll());
 		System.out.println(fila.poll());
 		System.out.println(fila.poll());
 		System.out.println(fila.poll());
 		System.out.println(fila.poll());
 		System.out.println(fila.poll());
-		System.out.println(fila.poll());
+		System.out.println(fila.remove());// lança uma exception
 	}
 
 }

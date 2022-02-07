@@ -28,7 +28,7 @@ public class Fila {
 		//fila.size(); 
 		//fila.clear(); limpar
 		//fila.isEmpty(); saber se estar ou não vazia
-		
+		//fila.contains(); Para saber se tem elemento
 		
 		//Poll e Remove -> Obtem o proximo elemento da fila e remove!
 		//diferença é o comportamento

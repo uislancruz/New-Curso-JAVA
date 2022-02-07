@@ -17,6 +17,14 @@ public class Mapa {
 		
 		System.out.println(usuarios.keySet());
 		System.out.println(usuarios.values());
+		System.out.println(usuarios.entrySet());
+		
+		System.out.println(usuarios.containsKey(3));
+		System.out.println(usuarios.containsValue("Rebeca"));
+		
+		System.out.println(usuarios.get(4));
+		
+		
 		
 		
 		

@@ -30,7 +30,12 @@ public class CarroTeste {
 		//Faltou Encapsulamento !!!
 		//c1.motor.fatorInjecao = 30;
 		
+		
+		
 		System.out.println(c1.motor.giros());
+		
+		//Relação Bidirecional
+		System.out.println(c1.motor.carro.motor.carro.motor.giros());
 	}
 
 }

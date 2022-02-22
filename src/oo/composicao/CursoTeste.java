@@ -29,6 +29,8 @@ public class CursoTeste {
 			System.out.println("...e o meu nome é " + aluno.nome );
 		}
 		
+		System.out.println(aluno1.cursos.get(0).alunos);
+		
 		
 	}
 

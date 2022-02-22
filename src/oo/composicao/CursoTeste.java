@@ -19,9 +19,9 @@ public class CursoTeste {
 		curso2.adicionarAluno(aluno1);
 		curso2.adicionarAluno(aluno3);
 		
-		curso1.adicionarAluno(aluno3);
-		curso2.adicionarAluno(aluno3);
-		curso3.adicionarAluno(aluno3);
+		aluno1.adicionarCurso(curso3);
+		aluno1.adicionarCurso(curso3);
+		aluno1.adicionarCurso(curso3);
 		
 		for(Aluno aluno: curso3.alunos) {
 			

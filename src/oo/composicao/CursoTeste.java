@@ -23,10 +23,11 @@ public class CursoTeste {
 		curso2.adicionarAluno(aluno3);
 		curso3.adicionarAluno(aluno3);
 		
-		for(Aluno aluno: curso1.alunos) {
+		for(Aluno aluno: curso3.alunos) {
 			
-			System.out.println("Estou matriculado no curso " + curso3.nome);
+			System.out.println("Estou matriculado no curso " + curso3.nome + "...");
 			System.out.println("...e o meu nome é " + aluno.nome );
+			System.out.println();
 		}
 		
 		System.out.println(aluno1.cursos.get(0).alunos);

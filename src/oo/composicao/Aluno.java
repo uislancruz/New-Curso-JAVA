@@ -17,5 +17,9 @@ public class Aluno {
 		this.cursos.add(curso);
 		curso.alunos.add(this);
 	}
+	
+	public String toString() {// sou obrigado a usar o public por conta da herança
+		return nome;
+	}
 
 }

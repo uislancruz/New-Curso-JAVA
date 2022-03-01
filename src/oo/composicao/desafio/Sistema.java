@@ -15,7 +15,7 @@ public class Sistema {
 		
 		
 		Cliente cliente = new Cliente ("Maria Julia Moraes");
-		cliente.compras.add(compra1);
+		cliente.adicionarCompra(compra1);
 		cliente.compras.add(compra2);
 		
 		System.out.println(cliente.obterValorTotal());

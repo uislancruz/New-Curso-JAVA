@@ -7,7 +7,7 @@ public class Jogo {
 		Jogador j1 = new Jogador();
 		
 		j1.x = 10;
-		j1.y = 20;
+		j1.y = 10;
 		
 		j1.andar(Direcao.NORTE);
 		j1.andar(Direcao.LESTE);

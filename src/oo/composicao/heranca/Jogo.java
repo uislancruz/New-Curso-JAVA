@@ -21,9 +21,11 @@ public class Jogo {
 		monstro.atacar(heroi);
 		heroi.atacar(monstro);
 		
+		monstro.andar(Direcao.NORTE);
 		monstro.atacar(heroi);
 		heroi.atacar(monstro);
 		
+		monstro.andar(Direcao.NORTE);
 		monstro.atacar(heroi);
 		heroi.atacar(monstro);
 		

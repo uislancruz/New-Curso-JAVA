@@ -21,6 +21,12 @@ public class Jogo {
 		monstro.atacar(heroi);
 		heroi.atacar(monstro);
 		
+		monstro.atacar(heroi);
+		heroi.atacar(monstro);
+		
+		monstro.atacar(heroi);
+		heroi.atacar(monstro);
+		
 		System.out.println("Monstro tem =>" + monstro.vida);
 		System.out.println("Monstro tem =>" +heroi.vida);
 		

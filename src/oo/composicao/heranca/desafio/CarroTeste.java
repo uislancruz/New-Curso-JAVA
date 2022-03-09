@@ -1,0 +1,14 @@
+package oo.composicao.heranca.desafio;
+
+public class CarroTeste {
+	
+	public static void main(String[] args) {
+		
+		Carro c = new Civic();
+		
+		c.acelerar();
+		System.out.println(c);
+		
+	}
+
+}

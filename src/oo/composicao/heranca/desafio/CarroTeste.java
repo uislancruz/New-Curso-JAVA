@@ -4,11 +4,16 @@ public class CarroTeste {
 	
 	public static void main(String[] args) {
 		
-		Carro c = new Civic();
+		Carro c1 = new Civic();
 		
-		c.acelerar();
-		System.out.println(c);
+		c1.acelerar();
+		System.out.println(c1);
 		
+		c1.acelerar();
+		System.out.println(c1);
+		
+		c1.acelerar();
+		System.out.println(c1);
 	}
 
 }

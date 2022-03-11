@@ -9,7 +9,7 @@ public class Julia{
 		
 		Ana sogra = new Ana();
 		
-		System.out.println(sogra.formaDefalar);
+		//System.out.println(sogra.formaDefalar);
 		System.out.println(sogra.todosSabem);
 		
 	}

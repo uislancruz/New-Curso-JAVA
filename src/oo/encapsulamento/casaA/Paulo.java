@@ -14,7 +14,7 @@ public class Paulo {
 //		todosSabem
 		
 		
-		System.out.println(esposa.segredo);
+		//System.out.println(esposa.segredo);
 		System.out.println(esposa.facoDentrodeCasa);
 		System.out.println(esposa.formaDefalar);
 		System.out.println(esposa.todosSabem);

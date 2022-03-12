@@ -7,7 +7,7 @@ public class PessoaTeste {
 		p1.setNome("Pedro");	
 		p1.setIdade(30);	
 		
-		System.out.println(p1.getNome()+"\n" +p1.getIdade());
-		System.out.println(p1);
+		System.out.println(p1.getNome()+"\n" +p1.getIdade());//ler normal
+		System.out.println(p1);//quando vc denomina o ToString(muito melhor)
 }
 }

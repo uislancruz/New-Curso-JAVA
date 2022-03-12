@@ -2,8 +2,8 @@ package oo.composicao.heranca.desafio;
 
 public class Ferrari extends Carro implements Esportivo, Luxo{
 	
-	private boolean ligarTurbo;
-	private boolean ligarAr;
+	private boolean ligarTurbo = false;
+	private boolean ligarAr = false;
 	
 	public Ferrari(){
 		

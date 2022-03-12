@@ -2,6 +2,9 @@ package oo.composicao.heranca.desafio;
 
 public class Ferrari extends Carro implements Esportivo, Luxo{
 	
+	private boolean ligarTurbo;
+	private boolean ligarAr;
+	
 	public Ferrari(){
 		
 		this(315);
@@ -15,22 +18,46 @@ public class Ferrari extends Carro implements Esportivo, Luxo{
 	
 	public void ligarTurbo() {
 		
-		setDelta(35);
+		ligarTurbo = true;
 		
 	}
 	
 	public void desligarTurbo() {
-		setDelta(15);
+
+		ligarTurbo = false;
 		
 	}
 	
 	public void ligarAr() {
 		
+		ligarAr = true;
+		
 	}
 	
 	public void desligarAr() {
+		ligarAr = false;
 		
 	}
+
+	@Override
+	public int getDelta() {
+
+		if(ligarTurbo && ligarAr) {
+			return super.getDelta();
+		
+			} else if(ligarTurbo && ligarAr) {
+				return 30;
+				
+		}else{
+			return 15;
+		}
+		
+		
+	}
+	
+	
+	
+	
 	
 	//com a declaração do delta dentro do contrutor, se faz desnecessario a parte de baixo
 	

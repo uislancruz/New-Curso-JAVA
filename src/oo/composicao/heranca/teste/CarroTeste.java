@@ -1,7 +1,8 @@
 package oo.composicao.heranca.teste;
 
-import oo.composicao.heranca.desafio.Civic;
+import oo.composicao.heranca.desafio.Carro;
 import oo.composicao.heranca.desafio.Ferrari;
+import oo.composicao.heranca.desafio.Civic;
 
 public class CarroTeste {
 	
@@ -20,7 +21,7 @@ public class CarroTeste {
 		
 		System.out.println();
 		
-		Ferrari c2 = new Ferrari(400);
+		Carro c2 = new Ferrari(400);
 		
 		c2.acelerar();
 		c2.frear();

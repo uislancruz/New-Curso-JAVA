@@ -8,7 +8,8 @@ public class Arroz {
 		setPeso(peso);
 	}
 	
-	public double getPeso(double peso) {
+	
+	public double getPeso() {
 		return peso;
 	}
 	

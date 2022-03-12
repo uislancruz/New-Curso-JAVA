@@ -3,7 +3,7 @@ package oo.composicao.heranca.desafio;
 public class Monstro extends Jogador{
 	
 	public Monstro() {
-		super();
+		this(0, 0);
 	}
 	
 	public Monstro(int x, int y){

@@ -10,20 +10,14 @@ public class Pessoa {
 		setIdade(idade);
 		
 	}
-	
-	
-	
+	//Getter
 	public String getNome() {
 		return nome;
 	}
-
-
+	//Setter
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-
-
 
 
 	//Getter
@@ -38,6 +32,12 @@ public class Pessoa {
 		this.idade = novaIdade;
 		
 		}
+	}
+	
+	@Override
+	public String toString() {
+		
+		return "Ola, eu sou o " + getNome() + " e tenho "+ getIdade();
 	}
 
 }

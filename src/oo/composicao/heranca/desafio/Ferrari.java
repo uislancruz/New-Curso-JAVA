@@ -1,6 +1,6 @@
 package oo.composicao.heranca.desafio;
 
-public class Ferrari extends Carro{
+public class Ferrari extends Carro implements Esportivo, Luxo{
 	
 	public Ferrari(){
 		
@@ -10,7 +10,26 @@ public class Ferrari extends Carro{
 	public Ferrari(int velocidadeMaxima){
 		
 		super(velocidadeMaxima);
-		delta = 15;
+		setDelta(15);
+	}
+	
+	public void ligarTurbo() {
+		
+		setDelta(35);
+		
+	}
+	
+	public void desligarTurbo() {
+		setDelta(15);
+		
+	}
+	
+	public void ligarAr() {
+		
+	}
+	
+	public void desligarAr() {
+		
 	}
 	
 	//com a declaração do delta dentro do contrutor, se faz desnecessario a parte de baixo

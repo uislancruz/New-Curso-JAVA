@@ -2,7 +2,7 @@ package oo.composicao.heranca.desafio;
 
 public class Ferrari extends Carro{
 	
-	Ferrari(){
+	public Ferrari(){
 		
 		this(315);
 	}

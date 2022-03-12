@@ -1,4 +1,4 @@
-package oo.composicao.heranca;
+package oo.composicao.heranca.desafio;
 
 public enum Direcao {
 	

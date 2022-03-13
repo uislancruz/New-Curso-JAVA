@@ -4,7 +4,7 @@ public abstract class Animal {
 	
 	public String respirar() {
 		
-		return "CO2";
+		return "Usando Oxigenio";
 		
 	}
 	

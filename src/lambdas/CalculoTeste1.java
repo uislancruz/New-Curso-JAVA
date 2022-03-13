@@ -8,6 +8,8 @@ public class CalculoTeste1 {
 		
 		Calculo multiplicacao =  new Multiplicar();
 		
+		System.out.println(soma.executar(2, 3));
+		
 		
 	}
 

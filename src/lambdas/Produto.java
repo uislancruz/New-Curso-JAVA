@@ -1,5 +1,18 @@
 package lambdas;
 
-public class Produto {
+public class Produto extends Object{ //Todas as classes herda de Object... é a classe mãe (posso colocar ou não, tanto faz, sempre vai herdar de Object.
+	
+	final String nome;
+	final double preco;
+	final double desconto;
+	
+	public Produto(String nome, double preco, double desconto) {
+		
+		this.nome = nome;
+		this.preco = preco;
+		this.desconto = desconto;
+	}
+	
+	
 
 }

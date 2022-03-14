@@ -1,19 +1,30 @@
 package lambdas;
 
+import java.util.function.BinaryOperator;
+
 public class CalculoTeste3 {
 	
 	public static void main(String[] args) {
 		
-		Calculo calc = (x, y) -> {return x + y; }; //Lambda
 		
-		System.err.println(calc.executar(2, 3));
+		//Não: int -> Double
+		//Java não permite a conversão direta, um inteiro primitivo para Double
 		
-		calc = (x, y) -> x * y;//Lambda pode ser assim omitindo o return sem {return}
+		BinaryOperator<Double> calc = (x, y) -> {return x + y; };
 		
-		System.out.println(calc.executar(2, 3));
-		System.out.println(calc.legal());
-		System.out.println(Calculo.muitoLegal());//Acessando o metodo statico
+		System.err.println(calc.apply(2.0, 3.0)); // devido ao Double é necessario colocar o .0 Ex: 2.0
 		
+		calc = (x, y) -> x * y;
+		
+		System.out.println(calc.apply(2.0, 3.0));
+		
+		BinaryOperator<Integer> calc2 = (x, y) -> {return x + y; };
+		
+		System.err.println(calc2.apply(2, 3)); // devido ao Double é necessario colocar o .0 Ex: 2.0
+		
+		calc = (x, y) -> x * y;
+		
+		System.out.println(calc2.apply(2, 3));
 	}
 
 }

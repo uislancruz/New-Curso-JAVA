@@ -14,7 +14,7 @@ public class OperadorBinario {
 		BiFunction<Double, Double, String> resultado =
 				(n1, n2) -> ((n1 + n2) /2) >= 7? "Aprovado": "Reprovado";
 				
-				System.out.println(resultado.apply(2.7, 5.1));
+				System.out.println(resultado.apply(9.7, 5.1));
 		
 		
 	}

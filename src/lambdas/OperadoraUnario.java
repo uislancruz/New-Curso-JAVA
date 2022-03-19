@@ -20,7 +20,7 @@ public class OperadoraUnario {
 		System.out.println(resultado1);
 		
 		int resultado2 = aoQuadrado
-				.compose(vezesDois)
+				.compose(vezesDois) //compose faz o procedimento ao contrario
 				.compose(maisDois)
 				.apply(0);
 		

@@ -13,6 +13,10 @@ public class Produto extends Object{ //Todas as classes herda de Object... é a c
 		this.desconto = desconto;
 	}
 	
-	
+	@Override
+		public String toString() {
+			double precoFinal = preco * (1- desconto);
+			return "Nome: " + nome + " tem preço de R$" + precoFinal;
+		}
 
 }

@@ -10,6 +10,8 @@ public class Fornecedor {
 		
 		Supplier<List<String>> umLista = () -> Arrays.asList("Ana", "Bia", "Lia", "Gui");
 		
+		//por não receber nenhum parametro, colocamos os ().
+		
 		System.out.println(umLista.get());
 	}
 

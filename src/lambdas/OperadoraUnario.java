@@ -15,6 +15,8 @@ public class OperadoraUnario {
 				.andThen(aoQuadrado)
 				.apply(0);
 		
+		//anThen é para fazer composição de função
+		
 		System.out.println(resultado1);
 		
 	}

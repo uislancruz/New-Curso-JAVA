@@ -23,5 +23,8 @@ public class Consumidor {
 		List<Produto> produtos = Arrays.asList(p1, p2, p3, p4, p5);
 		
 		produtos.forEach(imprimir);
+		produtos.forEach(p -> System.out.println(p.preco));
+		produtos.forEach(System.out::println);
+		
 	}
 }

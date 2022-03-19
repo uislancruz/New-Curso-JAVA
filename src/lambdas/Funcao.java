@@ -14,15 +14,23 @@ public class Funcao {
 		
 		Function<String, String> empolgado = valor -> valor + "!!!";
 		
-		String resultadoFinal = parOuImpar
+		Function<String, String> duvida = valor -> valor + "???";
+		
+		String resultadoFinal1 = parOuImpar
 				.andThen(oResultadoE)
 				.andThen(empolgado)
 				.apply(32);
 		
+		String resultadoFinal2 = parOuImpar
+				.andThen(oResultadoE)
+				.andThen(duvida)
+				.apply(33);
 		
 		
-		System.out.println(resultadoFinal);
+		
+		System.out.println(resultadoFinal1);
 		System.out.println(parOuImpar.apply(32));
+		System.out.println(resultadoFinal2);
 	}
 
 }

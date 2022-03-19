@@ -12,7 +12,13 @@ public class Funcao {
 		
 		Function<String, String> oResultadoE = valor -> "O resultado é: " + valor;
 		
-		String resultadoFinal = parOuImpar.andThen(oResultadoE).apply(32);
+		
+		Function<String, String> empolgado = valor -> valor + "!!!";
+		
+		String resultadoFinal = parOuImpar
+				.andThen(oResultadoE)
+				.andThen(empolgado)
+				.apply(32);
 		
 		System.out.println(resultadoFinal);
 	}

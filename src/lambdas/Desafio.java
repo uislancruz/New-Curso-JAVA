@@ -7,7 +7,7 @@ public class Desafio {
 	
 	public static void main(String[] args) {
 		
-		Produto p = new Produto("iPad", 3235.89, 0.13);
+		
 		
 		Function<Produto, Double> precoFinal = 
 				produtoVariavel -> produtoVariavel.preco *(1- produtoVariavel.desconto);
@@ -19,6 +19,9 @@ public class Desafio {
 				preco -> Double.parseDouble(String.format("%.2f", preco));
 		Function<Double, String> formatar = 
 				preco -> ("R$" + preco).replace(".", ",");
+				
+		Produto p = new Produto("iPad", 3235.89, 0.13);
+		
 		String preco = precoFinal
 				.andThen(impostoMunicipal)
 				.andThen(frete)

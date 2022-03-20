@@ -8,10 +8,12 @@ public class ImprimindoObjetos {
 	public static void main(String[] args) {
 		
 		List<String> aprovados = Arrays.asList("Lu", "Gui", "Lucas", "Ana");
-		
-		System.out.println(aprovados);
-		
-		
+			System.out.println(aprovados);
+			System.out.println(" ");
+			System.out.println("Usando o foreach...");
+			for(String nome: aprovados) {
+				System.out.println(nome);
+			}
 		
 	}
 

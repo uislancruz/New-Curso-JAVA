@@ -7,25 +7,26 @@ package lambdas;
 		
 		public static void main(String[] args) {
 			
-			
+			Produto p = new Produto("iPad", 3235.89, 0.13);
 			
 			Function<Produto, Double> precoFinal = 
-					produtoVariavel -> produtoVariavel.preco *(1- produtoVariavel.desconto);
+					produto -> produto.preco * (1- produto.desconto);
+					
 			UnaryOperator<Double> impostoMunicipal = 
 					preco -> preco >= 2500 ? preco * 1.085 : preco;
-			UnaryOperator<Double> frete =
-					preco -> preco >= 3000 ? preco + 100 : preco;
+			UnaryOperator<Double> frete = 
+					preco -> preco >= 3000 ? preco + 100 : preco + 50;
 			UnaryOperator<Double> arredondar = 
 					preco -> Double.parseDouble(String.format("%.2f", preco));
 			Function<Double, String> formatar = 
 					preco -> ("R$" + preco).replace(".", ",");
 					
-			Produto p = new Produto("iPad", 3235.89, 0.13);
+			
 			
 			String preco = precoFinal
 					.andThen(impostoMunicipal)
 					.andThen(frete)
-					.andThen(arredondar)
+					//.andThen(arredondar)
 					.andThen(formatar)
 					.apply(p);
 			

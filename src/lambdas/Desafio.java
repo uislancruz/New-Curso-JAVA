@@ -26,7 +26,7 @@ package lambdas;
 			String preco = precoFinal
 					.andThen(impostoMunicipal)
 					.andThen(frete)
-					//.andThen(arredondar)
+					.andThen(arredondar)
 					.andThen(formatar)
 					.apply(p);
 			

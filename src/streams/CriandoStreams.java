@@ -10,9 +10,12 @@ public class CriandoStreams {
 		Consumer<String> print = System.out::print;
 		
 		Stream<String> langs = Stream.of("Java", " Lua", " JS\n");
-		
 		langs.forEach(print);
 		
+		
+		String[] maisLangs = {"Phython", " Lisp", " Perl", " Go\n"};
+		
+		Stream.of(maisLangs).forEach(print);
 	}
 
 }

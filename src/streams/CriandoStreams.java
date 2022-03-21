@@ -28,7 +28,7 @@ public class CriandoStreams {
 		
 		//Stream.generate(() -> "a").forEach(print); //Loop
 
-		Stream.iterate(0, n -> n + 1).forEach(println);
+		//Stream.iterate(0, n -> n + 1).forEach(println); //Loopzao
 	}
 
 }

@@ -21,7 +21,9 @@ public class CriandoStreams {
 		Arrays.stream(maisLangs).forEach(print);
 		Arrays.stream(maisLangs, 1, 4).forEach(print);
 		
-		List<String> outrasLangs = Arrays.asList("C", " PHP", "Kotlin\n");
+		List<String> outrasLangs = Arrays.asList(" C ", " PHP ", " Kotlin\n");
+		outrasLangs.stream().forEach(print);
+		outrasLangs.parallelStream().forEach(print);
 	}
 
 }

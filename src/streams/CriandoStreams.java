@@ -10,6 +10,7 @@ public class CriandoStreams {
 	public static void main(String[] args) {
 		
 		Consumer<String> print = System.out::print;
+		Consumer<Integer> println = System.out::println;
 		
 		Stream<String> langs = Stream.of("Java", " Lua", " JS\n");
 		langs.forEach(print);
@@ -24,6 +25,10 @@ public class CriandoStreams {
 		List<String> outrasLangs = Arrays.asList(" C ", " PHP ", " Kotlin\n");
 		outrasLangs.stream().forEach(print);
 		outrasLangs.parallelStream().forEach(print);
+		
+		//Stream.generate(() -> "a").forEach(print); //Loop
+
+		Stream.iterate(0, n -> n + 1).forEach(println);
 	}
 
 }

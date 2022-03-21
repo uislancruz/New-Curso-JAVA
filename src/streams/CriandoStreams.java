@@ -1,5 +1,6 @@
 package streams;
 
+import java.util.Arrays;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
@@ -16,6 +17,8 @@ public class CriandoStreams {
 		String[] maisLangs = {"Phython", " Lisp", " Perl", " Go\n"};
 		
 		Stream.of(maisLangs).forEach(print);
+		Arrays.stream(maisLangs).forEach(print);
+		Arrays.stream(maisLangs, 1, 4).forEach(print);
 	}
 
 }

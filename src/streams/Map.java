@@ -25,7 +25,9 @@ public class Map {
 		marcas.stream()
 		.map(maiuscula)
 		.map(primeiraLetra)
+		.map(grito)
 		.forEach(print);
+		
 	}
 
 }

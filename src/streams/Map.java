@@ -18,8 +18,14 @@ public class Map {
 		UnaryOperator<String> primeiraLetra = n -> n.charAt(0) + " ";
 		UnaryOperator<String> grito = n -> n + "!!!";
 		
-		maiuscula.andThen(primeiraLetra).andThen(grito).apply("BMW");
+		//System.out.println(maiuscula.andThen(primeiraLetra).andThen(grito).apply("BMW"));
 		
+		
+		System.out.println("\n\nUsando composição");
+		marcas.stream()
+		.map(maiuscula)
+		.map(primeiraLetra)
+		.forEach(print);
 	}
 
 }

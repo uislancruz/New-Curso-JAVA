@@ -14,7 +14,7 @@ public class Map {
 		
 		marcas.stream().map(m -> m.toUpperCase()).forEach(print);
 		
-		UnaryOperator<String> maiuscula = n -> n.toUpperCase();
+		//UnaryOperator<String> maiuscula = n -> n.toUpperCase();
 		UnaryOperator<String> primeiraLetra = n -> n.charAt(0) + " ";
 		UnaryOperator<String> grito = n -> n + "!!!";
 		
@@ -23,7 +23,7 @@ public class Map {
 		
 		System.out.println("\n\nUsando composição");
 		marcas.stream()
-		.map(maiuscula)
+		.map(Utilitarios.maiuscula)
 		.map(primeiraLetra)
 		.map(grito)
 		.forEach(print);

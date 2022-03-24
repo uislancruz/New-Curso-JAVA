@@ -16,7 +16,7 @@ public class Map {
 		
 		//UnaryOperator<String> maiuscula = n -> n.toUpperCase();
 		UnaryOperator<String> primeiraLetra = n -> n.charAt(0) + " ";
-		UnaryOperator<String> grito = n -> n + "!!!";
+		//UnaryOperator<String> grito = n -> n + "!!!";
 		
 		//System.out.println(maiuscula.andThen(primeiraLetra).andThen(grito).apply("BMW"));
 		
@@ -25,7 +25,7 @@ public class Map {
 		marcas.stream()
 		.map(Utilitarios.maiuscula)
 		.map(primeiraLetra)
-		.map(grito)
+		.map(Utilitarios::grito)
 		.forEach(print);
 		
 	}

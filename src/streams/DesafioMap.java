@@ -2,6 +2,7 @@ package streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 public class DesafioMap {
@@ -16,9 +17,13 @@ public class DesafioMap {
 	UnaryOperator<String> inverter = texto 
 			-> new StringBuilder(texto).reverse().toString();
 	
+	Function<String, Integer> binarioParaInt = teste 
+			-> Integer.parseInt(teste, 2);		
+			
 	nums.stream()
 	.map(Integer::toBinaryString)
 	.map(inverter)
+	.map(binarioParaInt)
 	.forEach(System.out::println);
 	
 	

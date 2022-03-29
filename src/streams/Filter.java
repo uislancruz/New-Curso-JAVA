@@ -17,8 +17,9 @@ public class Filter {
 		Aluno a6 = new Aluno("Pedro", 8.8);
 		
 		List<Aluno> alunos = Arrays.asList(a1, a2, a3, a4, a5, a6);	
-		
+				
 		Predicate<Aluno> aprovado = a -> a.nota >= 7;
+		
 		Function<Aluno, String> saudacaoAprovado = 
 				a -> "Parabéns " + a.nome + " !Voce foi aprovado";
 		

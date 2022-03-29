@@ -6,11 +6,14 @@ public class Aluno {
 	final double nota;
 	
 	
+	
 	public Aluno(String nome, double nota) {
 		
 		this.nome = nome;
-		this.nota = nota;
+		 this.nota = nota;
+		
 	}
+	
 	
 	
 

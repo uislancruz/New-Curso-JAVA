@@ -22,7 +22,7 @@ public class DesafioFilter {
 		
 		//Filter, filter, map
 		
-		Predicate<Produtos> superPromocao = p -> p.desconto >= 30; 
+		Predicate<Produtos> superPromocao = p -> p.desconto >= 0.30; 
 		Predicate<Produtos> freteGratis = p -> p.valorFrete >= 0; 
 		Predicate<Produtos> produtoRelevante = p -> p.preco >= 500; 
 		

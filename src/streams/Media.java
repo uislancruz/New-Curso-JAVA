@@ -5,9 +5,10 @@ public class Media {
 	private double total;
 	private int quantidade;
 	
-	public void adicionar(double valor) {
+	public Media adicionar(double valor) {
 		total += valor;
 		quantidade++;
+		return this;
 	}
 	
 	public double getValor() {

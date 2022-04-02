@@ -3,6 +3,7 @@ package streams;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -24,11 +25,17 @@ public class Reduce3 {
 //		para colocar toda essa expressão na mesma linha.
 		
 		BiFunction<Media, Double, Media> calcularMedia = 
-				(media, nota) -> media.adicionar(0);
+				(media, nota) -> media.adicionar(nota);
+		BinaryOperator<Media> combinarMedia =
+				(m1, m2) -> Media.combinar(m1, m2);
 		
-		aluno.stream()
+		Media media = aluno.parallelStream()		
+		
 		.filter(aprovado)
-		.map(apenasNota);
+		.map(apenasNota)
+		.reduce(new Media(), calcularMedia, combinarMedia);
+		
+		System.out.println("A medi da turma é: " + media.getValor() );
 		
 		
 	}

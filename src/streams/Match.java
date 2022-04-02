@@ -17,8 +17,11 @@ public class Match {
 		List<Aluno> aluno = Arrays.asList(a1, a2, a3, a4);
 		
 		Predicate<Aluno> aprovado = a -> a.nota >= 7;
+		Predicate<Aluno> reprovado = aprovado.negate();
 		
 		System.out.println(aluno.stream().allMatch(aprovado));
+		System.out.println(aluno.stream().anyMatch(aprovado));
+		System.out.println(aluno.stream().noneMatch(reprovado));
 		
 	}
 

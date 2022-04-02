@@ -13,8 +13,14 @@ public class Reduce1 {
 		BinaryOperator<Integer> soma = (acumuladorVariavel, nVariavel)
 				-> acumuladorVariavel + nVariavel;
 		
-		int total = nums.stream().reduce(soma).get();
-		System.out.println(total);
+		int total1 = nums.stream().reduce(soma).get();
+		System.out.println(total1);
+		
+		//Integer total2 = nums.parallelStream().reduce(100, soma);//com o parallelStream ele coloca o valor inicial em cada chamada. Na lista tem 9 elemento, então ele colocou o 100 nove vezes.
+		Integer total2 = nums.stream().reduce(100, soma);//com o parallelStream ele coloca o valor inicial em cada chamada. Na lista tem 9 elemento, então ele colocou o 100 nove vezes.
+		
+		
+		System.out.println(total2);
 		
 	}
 

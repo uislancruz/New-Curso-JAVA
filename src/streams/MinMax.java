@@ -25,6 +25,7 @@ public class MinMax {
 		};
 		
 		System.out.println(aluno.stream().max(melhorNota).get());
+		System.out.println(aluno.stream().min(melhorNota).get());
 		
 	}
 

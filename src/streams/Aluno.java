@@ -22,7 +22,12 @@ public class Aluno {
 		
 	}
 	
-	
+
+	@Override
+	public String toString() {
+		
+		return nome + " Tem nota " + nota;
+	}
 	
 
 }

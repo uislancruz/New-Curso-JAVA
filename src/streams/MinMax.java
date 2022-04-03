@@ -24,8 +24,20 @@ public class MinMax {
 			
 		};
 		
+		Comparator<Aluno> piorNorta = (aluno1, aluno2) ->{
+			
+			if(aluno1.nota > aluno2.nota) return - 1;
+			if(aluno1.nota < aluno2.nota) return  1;
+			
+			return 0;
+			
+		};
+		
 		System.out.println(aluno.stream().max(melhorNota).get());
+		System.out.println(aluno.stream().min(piorNorta).get());
+		
 		System.out.println(aluno.stream().min(melhorNota).get());
+		System.out.println(aluno.stream().max(piorNorta).get());
 		
 	}
 

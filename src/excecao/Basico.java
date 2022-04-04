@@ -6,9 +6,19 @@ public class Basico {
 		
 		Aluno a1 = null;
 		
-		imprimirNomeDoAluno(a1);
+		try {
+			
+			imprimirNomeDoAluno(a1);
+		}catch(Exception exception) {
+			System.out.println("Ocorreu um erro" + " de imprimir o nome do usuario");
+		}
 		
-		System.out.println(7/0);
+		try {
+			System.out.println(7/0);
+		} catch (ArithmeticException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		System.out.println("Fim :)");
 	}

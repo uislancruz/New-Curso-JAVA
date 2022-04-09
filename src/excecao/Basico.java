@@ -27,6 +27,8 @@ public class Basico {
 		
 		System.out.println(aluno.nome);
 		
+		
+		
 	}
 
 }

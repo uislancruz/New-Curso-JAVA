@@ -17,7 +17,8 @@ public class Basico {
 			System.out.println(7/0);
 		} catch (ArithmeticException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println("Ocorreu o erro: " + e.getMessage());
 		}
 		
 		System.out.println("Fim :)");

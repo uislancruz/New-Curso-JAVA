@@ -13,7 +13,7 @@ public class ChecadaVsNaoChecada {
 	
 	static void geraErro1() {
 		
-		new RuntimeException("Ocorreu um erro bem legal #01!");
+		throw new RuntimeException("Ocorreu um erro bem legal #01!");
 		
 	}
 	

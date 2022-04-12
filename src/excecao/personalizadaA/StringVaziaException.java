@@ -1,11 +1,11 @@
 package excecao.personalizadaA;
 
 @SuppressWarnings("serial")
-public class NumeroNegativoException extends RuntimeException{
+public class StringVaziaException extends RuntimeException{
 	
 	private String nomeDoAtributo;
 	
-	public NumeroNegativoException(String nomeDoAtributo) {
+	public StringVaziaException(String nomeDoAtributo) {
 		this.nomeDoAtributo = nomeDoAtributo;
 	}
 	

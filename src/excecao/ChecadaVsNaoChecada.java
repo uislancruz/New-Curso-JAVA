@@ -10,7 +10,12 @@ public class ChecadaVsNaoChecada {
 			System.out.println(e.getMessage());
 		} 
 		
-		geraErro2();
+		try {
+			geraErro2();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
 		
 		System.out.println("FIM :)");
 				
@@ -22,7 +27,11 @@ public class ChecadaVsNaoChecada {
 	}
 	
 	static void geraErro2() {
-		new Exception("Ocorreu um erro bem legal #02!");
+		try {
+			throw new Exception("Ocorreu um erro bem legal #02!");
+		} catch (Exception e) {
+		System.out.println("Que legal!");
+		}
 		
 	}
 

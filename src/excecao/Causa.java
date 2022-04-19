@@ -3,11 +3,22 @@ package excecao;
 public class Causa {
 	
 	public static void main(String[] args) {
-		metodoA(null);
+		try {
+			metodoA(null);
+		} catch (IllegalArgumentException e) {
+			if(e.getCause() !=null) {
+				System.out.println(e.getCause().getMessage());
+			}
+		}
 	}
 	
 	static void metodoA(Aluno aluno) {
-		metodoB(aluno);
+		try {
+			metodoB(aluno);
+		} catch (Exception causa) {
+			
+			throw new IllegalArgumentException(causa);
+		}
 	}
 	
     static void metodoB(Aluno aluno) {

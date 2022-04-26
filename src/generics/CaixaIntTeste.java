@@ -6,7 +6,7 @@ public class CaixaIntTeste {
 		CaixaInt<String> caixaA = new CaixaInt<String>();
 		caixaA.guardar("Teste");
 		
-		String coisa = caixaA.abrir();
-		System.out.println(coisa);
+		String coisaA = caixaA.abrir();
+		System.out.println(coisaA);
 	}
 }

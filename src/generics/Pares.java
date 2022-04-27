@@ -21,7 +21,7 @@ public class Pares<C extends Number, V> {
 	}
 	
 	public V getValor(C chave) {
-		if(chave == null) return;
+		if(chave == null) return null;
 		
 		 	Optional<Par<C, V>> parOpcional =
 		 		itens.stream()

@@ -2,6 +2,6 @@ package padroes.observer;
 
 public interface ObservadorChegadaAniversariante {
 	
-	public void Chegou(EventoChegadaAniversariante evento);
+	public void chegou(EventoChegadaAniversariante evento);
 
 }

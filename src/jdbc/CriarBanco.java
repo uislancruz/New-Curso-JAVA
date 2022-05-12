@@ -3,6 +3,7 @@ package jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class CriarBanco {
 	
@@ -14,7 +15,11 @@ public class CriarBanco {
 		
 		Connection conexao = DriverManager.getConnection(url, usuario, senha);
 		
-		System.out.println("Conexão efetuada com sucesso");
+		Statement stmt = conexao.createStatement();
+		stmt.execute("CREATE DATABASE curso_java");
+		
+		
+		System.out.println("Banco criado com sucesso");
 		conexao.close();
 	}
 

@@ -16,7 +16,7 @@ public class AlterarNomePessoa {
 		int codigo = entrada.nextInt();
 		
 		String select = "SELECT * FROM pessoas WHERE codigo = ?";
-		String update = "UPDATE pessoa SET nome = ? WHERE codigo = ?";
+		String update = "UPDATE pessoas SET nome = ? WHERE codigo = ?";
 		
 		Connection conexao = FabricaConexao.getConexao();
 		PreparedStatement stmt = conexao.prepareStatement(select);
@@ -38,6 +38,7 @@ public class AlterarNomePessoa {
 		stmt = conexao.prepareStatement(update);
 		stmt.setString(1, novoNome);
 		stmt.setInt(2, codigo);
+		stmt.execute();
 		
 		System.out.println("Pessoal alterada com sucesso");
 		

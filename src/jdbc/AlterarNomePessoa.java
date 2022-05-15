@@ -15,9 +15,11 @@ public class AlterarNomePessoa {
 		System.out.println("Informe o codigo da pessoa: ");
 		int codigo = entrada.nextInt();
 		
-		String sql = "SELECT * FROM pessoas WHERE codigo = ?";
+		String select = "SELECT * FROM pessoas WHERE codigo = ?";
+		String update = "UPDATE pessoa SET nome = ? WHERE codigo = ?";
+		
 		Connection conexao = FabricaConexao.getConexao();
-		PreparedStatement stmt = conexao.prepareStatement(sql);
+		PreparedStatement stmt = conexao.prepareStatement(select);
 		stmt.setInt(1, codigo);
 		ResultSet resultado = stmt.executeQuery();
 		
@@ -26,11 +28,22 @@ public class AlterarNomePessoa {
 			Pessoa p = new Pessoa(resultado.getInt(1), resultado.getString(2));
 			
 			System.out.println("O nome atual é: " + p.getNome());
-		}
+			entrada.nextLine();
+			
+			System.out.println("Informe o novo nome: ");
+			String novoNome = entrada.nextLine();
+			
+			
+		stmt.close();
+		stmt = conexao.prepareStatement(update);
+		stmt.setString(1, novoNome);
+		stmt.setInt(2, codigo);
 		
-		conexao.close();
-		entrada.close();
+		System.out.println("Pessoal alterada com sucesso");
+		
 				
 	}
-
+		conexao.close();
+		entrada.close();
+}
 }

@@ -43,6 +43,8 @@ public class AlterarNomePessoa {
 		System.out.println("Pessoal alterada com sucesso");
 		
 				
+	}else {
+		System.out.println("Pessoa não encontrata!");
 	}
 		conexao.close();
 		entrada.close();

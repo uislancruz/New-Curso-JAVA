@@ -10,7 +10,7 @@ public class AlterarNomePessoa {
 	
 	public static void main(String[] args) throws SQLException {
 		
-		Scanner entrada = new Scanner(System.in); 
+		Scanner entrada = new Scanner(System.in);  
 		
 		System.out.println("Informe o codigo da pessoa: ");
 		int codigo = entrada.nextInt();

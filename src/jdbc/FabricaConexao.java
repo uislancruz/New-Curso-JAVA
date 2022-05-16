@@ -11,7 +11,7 @@ public class FabricaConexao {
 		
 		try {
 			final String url = "jdbc:mysql://localhost/curso_java?verifyServerCertificate=false&useSSl=true";
-			final String usuario = "root";
+			final String usuario = "root" ;
 			final String senha = "tricolor";
 			
 			return DriverManager.getConnection(url, usuario, senha);

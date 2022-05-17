@@ -3,6 +3,7 @@ package jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 
 public class FabricaConexao {
@@ -20,5 +21,14 @@ public class FabricaConexao {
 		}
 		
 
+	}
+	
+	private static Properties getProperties() throws SQLException{
+		Properties prop = new Properties();
+		String caminho = "/conexao.properties";
+		
+		prop.load(FabricaConexao.class.getResourceAsStream(caminho));
+		
+		return prop;
 	}
 }
